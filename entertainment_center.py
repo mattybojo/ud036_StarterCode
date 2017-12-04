@@ -1,7 +1,10 @@
+""" This module will generate a webpage based on the movies defined within """
+
 import fresh_tomatoes
 import media
 
-# create instance of Movie class for each movie - title, storyline, poster link, and youtube trailer link
+# create instance of Movie class for each movie
+# Movie consists of title, storyline, poster link, and youtube trailer link
 
 super_troopers = media.Movie(
     "Super Troopers",
@@ -29,7 +32,7 @@ the_matrix = media.Movie(
 
 saving_private_ryan = media.Movie(
     "Saving Private Ryan",
-    "In the Last Great Invasion of the Last Great War, The Greatest Danger for Eight Men was Saving... One.",
+    "There was only one man left in the family, and the mission was to save him.",
     "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
     "https://www.youtube.com/watch?v=zwhP5b4tD6g")
 

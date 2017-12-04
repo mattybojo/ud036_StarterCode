@@ -1,3 +1,5 @@
+""" This module defines the class Movie """
+
 import webbrowser
 
 class Movie():
