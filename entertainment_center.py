@@ -15,7 +15,7 @@ super_troopers = media.Movie(
 shawshank_redemption = media.Movie(
     "Shawshank Redemption",
     "Fear can hold you prisoner. Hope can set you free.",
-    "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg", # noqa
     "https://www.youtube.com/watch?v=6hB3S9bIaco")
 
 forrest_gump = media.Movie(
@@ -32,19 +32,26 @@ the_matrix = media.Movie(
 
 saving_private_ryan = media.Movie(
     "Saving Private Ryan",
-    "There was only one man left in the family, and the mission was to save him.",
-    "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg",
+    """There was only one man left in the family, 
+    and the mission was to save him.""",
+    "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg", # noqa
     "https://www.youtube.com/watch?v=zwhP5b4tD6g")
 
 the_green_mile = media.Movie(
     "The Green Mile",
     "Paul Edgecomb didn't believe in miracles. Until the day he met one.",
-    "https://upload.wikimedia.org/wikipedia/en/e/e2/The_Green_Mile_%28movie_poster%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/e/e2/The_Green_Mile_%28movie_poster%29.jpg", # noqa
     "https://www.youtube.com/watch?v=ctRK-4Vt7dA")
 
 # array of class Movie that is used in creating the web page
-movies = [super_troopers, shawshank_redemption, forrest_gump,
-          the_matrix, saving_private_ryan, the_green_mile]
+movies = [
+    super_troopers,
+    shawshank_redemption,
+    forrest_gump,
+    the_matrix,
+    saving_private_ryan,
+    the_green_mile
+]
 
 # create the html file which will contain the movies listed in the movies array
 fresh_tomatoes.open_movies_page(movies)
